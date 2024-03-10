@@ -15,10 +15,10 @@ import org.mockito.Mockito
 
 internal class WebviewUseragentPluginTest {
   @Test
-  fun onMethodCall_getPlatformVersion_returnsExpectedValue() {
+  fun onMethodCall_getPlatformUserAgent_returnsExpectedValue() {
     val plugin = WebviewUseragentPlugin()
 
-    val call = MethodCall("getPlatformVersion", null)
+    val call = MethodCall("getPlatformUserAgent", null)
     val mockResult: MethodChannel.Result = Mockito.mock(MethodChannel.Result::class.java)
     plugin.onMethodCall(call, mockResult)
 

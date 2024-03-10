@@ -15,11 +15,11 @@ import 'package:webview_useragent/webview_useragent.dart';
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('getPlatformVersion test', (WidgetTester tester) async {
-    final WebviewUseragent plugin = WebviewUseragent();
-    final String? version = await plugin.getPlatformVersion();
+  testWidgets('getPlatformUserAgent test', (WidgetTester tester) async {
+    final WebviewUserAgent plugin = WebviewUserAgent();
+    final String? userAgent = await plugin.getPlatformUserAgent();
     // The version string depends on the host platform running the test, so
     // just assert that some non-empty string is returned.
-    expect(version?.isNotEmpty, true);
+    expect(userAgent?.isNotEmpty, true);
   });
 }

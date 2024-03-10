@@ -4,26 +4,26 @@ import 'package:webview_useragent/webview_useragent_platform_interface.dart';
 import 'package:webview_useragent/webview_useragent_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class MockWebviewUseragentPlatform
+class MockWebviewUserAgentPlatform
     with MockPlatformInterfaceMixin
-    implements WebviewUseragentPlatform {
+    implements WebviewUserAgentPlatform {
 
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  Future<String?> getPlatformUserAgent() => Future.value('42');
 }
 
 void main() {
-  final WebviewUseragentPlatform initialPlatform = WebviewUseragentPlatform.instance;
+  final WebviewUserAgentPlatform initialPlatform = WebviewUserAgentPlatform.instance;
 
-  test('$MethodChannelWebviewUseragent is the default instance', () {
-    expect(initialPlatform, isInstanceOf<MethodChannelWebviewUseragent>());
+  test('$MethodChannelWebviewUserAgent is the default instance', () {
+    expect(initialPlatform, isInstanceOf<MethodChannelWebviewUserAgent>());
   });
 
-  test('getPlatformVersion', () async {
-    WebviewUseragent webviewUseragentPlugin = WebviewUseragent();
-    MockWebviewUseragentPlatform fakePlatform = MockWebviewUseragentPlatform();
-    WebviewUseragentPlatform.instance = fakePlatform;
+  test('getPlatformUserAgent', () async {
+    WebviewUserAgent webviewUserAgentPlugin = WebviewUserAgent();
+    MockWebviewUserAgentPlatform fakePlatform = MockWebviewUserAgentPlatform();
+    WebviewUserAgentPlatform.instance = fakePlatform;
 
-    expect(await webviewUseragentPlugin.getPlatformVersion(), '42');
+    expect(await webviewUserAgentPlugin.getPlatformUserAgent(), '42');
   });
 }

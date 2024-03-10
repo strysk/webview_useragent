@@ -5,7 +5,7 @@ import 'package:webview_useragent/webview_useragent_method_channel.dart';
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelWebviewUseragent platform = MethodChannelWebviewUseragent();
+  MethodChannelWebviewUserAgent platform = MethodChannelWebviewUserAgent();
   const MethodChannel channel = MethodChannel('webview_useragent');
 
   setUp(() {
@@ -21,7 +21,7 @@ void main() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await platform.getPlatformVersion(), '42');
+  test('getPlatformUserAgent', () async {
+    expect(await platform.getPlatformUserAgent(), '42');
   });
 }

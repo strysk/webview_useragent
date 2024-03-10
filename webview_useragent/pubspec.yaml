@@ -36,9 +36,9 @@ flutter:
     platforms:
       android:
         package: com.strysk.webview_useragent.webview_useragent
-        pluginClass: WebviewUseragentPlugin
+        pluginClass: WebviewUserAgentPlugin
       ios:
-        pluginClass: WebviewUseragentPlugin
+        pluginClass: WebviewUserAgentPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
