@@ -2,26 +2,26 @@ PODS:
   - Flutter (1.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - webview_useragent (0.0.1):
+  - webview_useragent_ios (1.0.0):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
-  - webview_useragent (from `.symlinks/plugins/webview_useragent/ios`)
+  - webview_useragent_ios (from `.symlinks/plugins/webview_useragent_ios/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
-  webview_useragent:
-    :path: ".symlinks/plugins/webview_useragent/ios"
+  webview_useragent_ios:
+    :path: ".symlinks/plugins/webview_useragent_ios/ios"
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   integration_test: 13825b8a9334a850581300559b8839134b124670
-  webview_useragent: 0b2bfe41a5c70643b3689fb5d740326a449dc4df
+  webview_useragent_ios: 4333e87c9c2a7325aca3cc69ec627c9a8fe36676
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 

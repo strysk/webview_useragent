@@ -1,0 +1,21 @@
+name: webview_useragent_ios
+version: 1.0.0
+
+environment:
+  sdk: ">=3.3.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  webview_useragent_platform_interface:
+    path: ../webview_useragent_platform_interface
+
+flutter:
+  plugin:
+    implements: webview_useragent
+    platforms:
+      ios:
+        pluginClass: WebviewUserAgentPlugin
+        dartPluginClass: WebviewUserAgentIOS
