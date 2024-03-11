@@ -5,7 +5,7 @@ abstract class WebviewUserAgentPlatform extends PlatformInterface {
 
   static final _token = Object();
 
-  static WebviewUserAgentPlatform _instance = DefaultWebviewUserAgent();
+  static WebviewUserAgentPlatform _instance = _DefaultWebviewUserAgent();
 
   static WebviewUserAgentPlatform get instance => _instance;
 
@@ -19,6 +19,11 @@ abstract class WebviewUserAgentPlatform extends PlatformInterface {
   }
 }
 
-class DefaultWebviewUserAgent extends WebviewUserAgentPlatform {
-  DefaultWebviewUserAgent();
+class _DefaultWebviewUserAgent extends WebviewUserAgentPlatform {
+  _DefaultWebviewUserAgent();
+  
+  @override
+  Future<String> getPlatformUserAgent() {
+    return Future.value("default value");
+  }
 }

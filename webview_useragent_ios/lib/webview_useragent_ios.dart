@@ -6,7 +6,6 @@ class WebviewUserAgentIOS extends WebviewUserAgentPlatform {
 
   final methodChannel = MethodChannel("webview_useragent");
 
-  /// Registers this class as the default instance of [UrlLauncherPlatform].
   static void registerWith() {
     WebviewUserAgentPlatform.instance = WebviewUserAgentIOS();
   }
