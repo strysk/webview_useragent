@@ -1,3 +1,3 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.strysk.webview_useragent.webview_useragent">
+    package="com.strysk.webview_useragent_android.webview_useragent_android">
 </manifest>

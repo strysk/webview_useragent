@@ -1,4 +1,4 @@
-group 'com.strysk.webview_useragent.webview_useragent'
+group 'com.strysk.webview_useragent_android.webview_useragent_android'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.strysk.webview_useragent.webview_useragent'
+        namespace 'com.strysk.webview_useragent_android.webview_useragent_android'
     }
 
     compileSdkVersion 33
@@ -59,9 +59,9 @@ android {
             useJUnitPlatform()
 
             testLogging {
-               events "passed", "skipped", "failed", "standardOut", "standardError"
-               outputs.upToDateWhen {false}
-               showStandardStreams = true
+                events "passed", "skipped", "failed", "standardOut", "standardError"
+                outputs.upToDateWhen {false}
+                showStandardStreams = true
             }
         }
     }

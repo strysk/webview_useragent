@@ -13,6 +13,8 @@ dependencies:
   plugin_platform_interface: ^2.0.2
   webview_useragent_ios:
     path: ../webview_useragent_ios
+  webview_useragent_android:
+    path: ../webview_useragent_android
   webview_useragent_platform_interface:
     path: ../webview_useragent_platform_interface
 
@@ -25,7 +27,6 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.strysk.webview_useragent.webview_useragent
-        pluginClass: WebviewUserAgentPlugin
+        default_package: webview_useragent_android
       ios:
         default_package: webview_useragent_ios

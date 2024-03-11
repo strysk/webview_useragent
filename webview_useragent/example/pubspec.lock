@@ -278,6 +278,13 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
+  webview_useragent_android:
+    dependency: transitive
+    description:
+      path: "../../webview_useragent_android"
+      relative: true
+    source: path
+    version: "0.0.0"
   webview_useragent_ios:
     dependency: transitive
     description:

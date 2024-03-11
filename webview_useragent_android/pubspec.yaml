@@ -1,0 +1,21 @@
+name: webview_useragent_android
+
+environment:
+  sdk: ">=3.3.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  webview_useragent_platform_interface:
+    path: ../webview_useragent_platform_interface
+
+flutter:
+  plugin:
+    implements: webview_useragent
+    platforms:
+      android:
+        package: com.strysk.webview_useragent_android.webview_useragent_android
+        pluginClass: WebviewUserAgentPlugin
+        dartPluginClass: WebviewUserAgentAndroid
