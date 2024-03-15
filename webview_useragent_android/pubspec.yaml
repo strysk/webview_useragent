@@ -1,15 +1,17 @@
 name: webview_useragent_android
+description: The Android implementation of webview_useragent.
+repository: https://github.com/strysk/webview_useragent/tree/main/webview_useragent_android
+version: 1.0.0
 
 environment:
-  sdk: ">=3.3.0"
-  flutter: ">=3.19.0"
+  sdk: '^3.3.0'
+  flutter: '>=3.19.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
-  webview_useragent_platform_interface:
-    path: ../webview_useragent_platform_interface
+  webview_useragent_platform_interface: ^1.0.0
 
 flutter:
   plugin:
