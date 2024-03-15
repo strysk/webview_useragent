@@ -4,8 +4,8 @@ Pod::Spec.new do |s|
   s.summary          = 'pod for webview_useragent.'
   s.description      = 'pod for webview_useragent.'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
-  s.homepage         = 'http://example.com'
+  s.author           = { 'Ryosuke Seto' => 'strysk.dev@gmail.com' }
+  s.homepage         = ''
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
