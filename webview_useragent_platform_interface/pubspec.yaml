@@ -1,9 +1,11 @@
 name: webview_useragent_platform_interface
+description: A common platform interface for the webview_useragent plugin.
+repository: https://github.com/strysk/webview_useragent/tree/main/webview_useragent_platform_interface
 version: 1.0.0
 
 environment:
-  sdk: ">=3.3.0"
-  flutter: ">=3.19.0"
+  sdk: '^3.3.0'
+  flutter: '>=3.19.0'
 
 dependencies:
   flutter:
